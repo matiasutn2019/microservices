@@ -12,7 +12,7 @@
 	<artifactId>DockerSpringNetflix-ZuulService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>DockerSpringNetflix-ZuulService</name>
-	<description>Eureka Server for our dockerized application</description>
+	<description>Zuul service for our dockerized application</description>
 	<properties>
 		<java.version>17</java.version>
 		<spring-cloud.version>2020.0.4</spring-cloud.version>
@@ -22,6 +22,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-zuul -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+			<version>2.2.10.RELEASE</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
